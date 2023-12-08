@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray_background_color">
+
+
+    <ImageView
+        android:id="@+id/locationButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/distance"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/locationButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20km"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/distanceTxt"
+        app:layout_constraintStart_toStartOf="@id/distanceTxt"
+        app:layout_constraintTop_toBottomOf="@id/distanceTxt" />
+
+    <TextView
+        android:id="@+id/advertiseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/distanceTxt"
+        android:layout_marginTop="5dp"
+        android:text="@string/cars_near_you"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/distanceSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/advertiseTitle"
+        app:layout_constraintTop_toBottomOf="@id/distanceKM"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:thumb="@drawable/seekbar_thumb"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:splitTrack="false"
+        android:max="100"
+        android:progress="20"
+        android:visibility="gone"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_advertises"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/advertiseTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_advertise" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

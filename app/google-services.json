@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121141116755",
+    "firebase_url": "https://carbnb-6e3da-default-rtdb.firebaseio.com",
+    "project_id": "carbnb-6e3da",
+    "storage_bucket": "carbnb-6e3da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121141116755:android:0073132d2bfed98b40aba6",
+        "android_client_info": {
+          "package_name": "com.example.carbnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121141116755-dc9jp772dl0re7befgjus1gnsmkbqmin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carbnb",
+            "certificate_hash": "a86c2e49dca952fd38ac23f016d7c0b9477c3016"
+          }
+        },
+        {
+          "client_id": "121141116755-kssl3g440rpmi91pqtgh1qm8j91old4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf9DSuIQ4pThLRMkuGfVWpuXoP1MZBhDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121141116755-kssl3g440rpmi91pqtgh1qm8j91old4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
